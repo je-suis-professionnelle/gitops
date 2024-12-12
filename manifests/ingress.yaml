@@ -4,7 +4,10 @@ metadata:
   name: rally-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+  labels:
+    app.kubernetes.io/instance: rallyapp
 spec:
+  ingressClassName: nginx
   rules:
   - http:
       paths:
