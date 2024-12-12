@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: triggerRallye
+  name: triggerrallye
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: triggerRallye
+      app: triggerrallye
   template:
     metadata:
       labels:
-        app: triggerRallye
+        app: triggerrallye
     spec:
       containers:
       - image: milou666/triggerrally
-        name: triggerRallye
+        name: triggerrallye
         ports:
         - containerPort: 80
